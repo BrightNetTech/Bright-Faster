@@ -10,16 +10,6 @@ class Contact(models.Model):
     def __str__(self):
         return self.Name
 
-class Track(models.Model):
-    Map = models.Geolocation()
-    Longitude = models.GPRS()
-    Latidude = models.GPRS()
-    Tracking_id = models.CharField(max_length=20)
-
-
-    def __str__(self):
-        return self.Map
-
 
     
 
